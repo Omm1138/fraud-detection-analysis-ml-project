@@ -1,0 +1,19 @@
+Fraud Transaction Detection Using Transactions Dataset
+
+Objective: 
+Develop a system capable of classifying transactions as fraudulent or legitimate.
+
+Dataset: 
+The dataset is a simulated collection of original and fraudulent transactions, containing only the core details of each transaction. Fraudulent transactions have been generated based on the following scenarios:
+
+1. Any transaction with an amount exceeding 220 is flagged as fraud. Although this scenario is not based on real-world patterns, it provides an obvious fraud signal to validate fraud detection implementation.
+2. Every day, two terminals are randomly selected, and all transactions made on these terminals over the next 28 days are marked as fraudulent. This scenario mimics criminal terminal misuse, such as phishing activities. Features tracking the frequency of fraudulent transactions at a terminal could aid in identifying such cases.
+3. Every day, three customers are randomly selected. Over the next 14 days, one-third of their transactions have their amounts multiplied by five and are marked as fraudulent. This scenario simulates card-not-present fraud, where customer credentials are compromised. Fraudsters make higher-value transactions to maximize gains while customers continue their regular spending. Features analyzing customer spending patterns could help detect such behavior.
+
+Fraud labels in the dataset are based on the above scenarios, which is essential for evaluating and diagnosing system performance.
+
+Description of Key Columns:
+- TRANSACTION_ID: Unique identifier for each transaction.
+- TX_DATETIME: The date and time when the transaction occurred.
+- CUSTOMER_ID: Unique identifier for each customer.
+- TERMINAL_ID: Identifier for the merchant terminal processing the transaction.
