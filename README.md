@@ -44,3 +44,4 @@ The project is organized for clarity and easy navigation:
 3. **Real-Time Feedback**: Prediction results are displayed instantly, providing users with actionable insights.
 
 ---
+[Access the Model Prediction Page](https://fraud-detection-analysis-ml-project-jzsd5nvwhkbesbfpfgxd8g.streamlit.app/Model_Prediction)
